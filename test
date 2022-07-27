@@ -29,8 +29,6 @@ local player = P.LocalPlayer
 local originalCameraZoomDistance = player.CameraMaxZoomDistance
 local character = player.Character
 local staterPlayerScriptsFolder = player.PlayerScripts.StarterPlayerScriptsFolder
-local TowerAssets = ServerAssets.TowerAssets
-local TowerAssets = workspace.Words:FindFirstChild("Tower")
 
 local REMOTE = RS.Remote
 local BINDABLE = RS.Bindable
@@ -58,6 +56,8 @@ local configValues = require(RS.ModuleScripts.ConfigValues)
 local passiveStats = require(RS.ModuleScripts.PassiveStats)
 local eggStats = require(RS.ModuleScripts.EggStats)
 local enemyDamagedEffect = require(staterPlayerScriptsFolder.LocalPetHandler.EnemyDamagedEffect)
+local TowerAssets = ServerAssets.TowerAssets
+local TowerAssets = workspace.Words:FindFirstChild("Tower")
 
 local data = store.GetStoreProxy("GameData")
 local IGNORED_RARITIES = {"Secret", "Raid", "Divine"}
