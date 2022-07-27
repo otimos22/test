@@ -71,12 +71,6 @@ local TRIAL_TARGET = {
     Weakest = false,
     Strongest = false,
 }
-
-local FLOOR_PER_GROUP = 5
-local FLOOR_GROUP_TIME = 60 • 5
-local MIN_OPEN_TIME = 10 -- Minimum time for the rest room door
-local FLOOR REMOVE TIME = 10
-
 local originalEquippedPets
 local originalPetsTab = {}
 local eggDisplayNameToNameLookUp = {}
@@ -1866,7 +1860,7 @@ do
                         task.wait(WAIT_BEFORE_GETTING_ENEMIES)
                     end
 
-                    if towerTime.Text ~= "60" and player.World.Value == "Tower" then
+                    if towerTime.Text ~= "60:5" and player.World.Value == "Tower" then
                         local enemies = WS.Worlds.Tower.Enemies
                         local tab = enemies:GetChildren()
                         local floorNumber = tonumber(floorNumberText.Text)
