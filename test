@@ -45,6 +45,10 @@ local HP_TO_SWAP_AT = 1e17
 local HP_THRESH_HOLD = 1e16
 local AUTO_EQUIP_TIME = 300
 local CURRENT_TRIAL = ""
+local FLOOR_PER_GROUP = 5
+local FLOOR_GROUP_TIME = 60 • 5
+local MIN_OPEN_TIME = 10 -- Minimum time for the rest room door
+local FLOOR REMOVE TIME = 10
 
 local statCalc = require(RS.ModuleScripts.StatCalc)
 local numToString = require(RS.ModuleScripts.NumToString)
@@ -56,8 +60,6 @@ local configValues = require(RS.ModuleScripts.ConfigValues)
 local passiveStats = require(RS.ModuleScripts.PassiveStats)
 local eggStats = require(RS.ModuleScripts.EggStats)
 local enemyDamagedEffect = require(staterPlayerScriptsFolder.LocalPetHandler.EnemyDamagedEffect)
-local TowerAssets = ServerAssets.TowerAssets
-local TowerAssets = workspace.Words:FindFirstChild("Tower")
 
 local data = store.GetStoreProxy("GameData")
 local IGNORED_RARITIES = {"Secret", "Raid", "Divine"}
