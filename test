@@ -45,10 +45,6 @@ local HP_TO_SWAP_AT = 1e17
 local HP_THRESH_HOLD = 1e16
 local AUTO_EQUIP_TIME = 300
 local CURRENT_TRIAL = ""
-local FLOOR_PER_GROUP = 5
-local FLOOR_GROUP_TIME = 60 • 5
-local MIN_OPEN_TIME = 10 -- Minimum time for the rest room door
-local FLOOR REMOVE TIME = 10
 
 local statCalc = require(RS.ModuleScripts.StatCalc)
 local numToString = require(RS.ModuleScripts.NumToString)
@@ -75,6 +71,10 @@ local TRIAL_TARGET = {
     Weakest = false,
     Strongest = false,
 }
+local FLOOR_PER_GROUP = 5
+local FLOOR_GROUP_TIME = 60 • 5
+local MIN_OPEN_TIME = 10 -- Minimum time for the rest room door
+local FLOOR REMOVE TIME = 10
 local originalEquippedPets
 local originalPetsTab = {}
 local eggDisplayNameToNameLookUp = {}
